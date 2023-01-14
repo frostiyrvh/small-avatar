@@ -1,0 +1,149 @@
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+local Window = Rayfield:CreateWindow({
+	Name = "choko :>",
+	LoadingTitle = "ChokoHub",
+	LoadingSubtitle = "by chokopockos",
+	ConfigurationSaving = {
+		Enabled = true,
+		FolderName = nul, -- Create a custom folder for your hub/game
+		FileName = "Big Hub"
+	},
+        Discord = {
+        	Enabled = false,
+        	Invite = "sirius", -- The Discord invite code, do not include discord.gg/
+        	RememberJoins = true -- Set this to false to make them join the discord every time they load it up
+        },
+	KeySystem = false, -- Set this to true to use our key system
+	KeySettings = {
+		Title = "Sirius Hub",
+		Subtitle = "Key System",
+		Note = "Join the discord (discord.gg/sirius)",
+		FileName = "SiriusKey",
+		SaveKey = true,
+		GrabKeyFromSite = false, 
+		Key = "Hello"
+	}
+})
+
+local Tab = Window:CreateTab("Evade")
+local Keybind = Tab:CreateKeybind({
+	Name = "Bhop",
+	CurrentKeybind = "LeftAlt",
+	HoldToInteract = false,
+	Flag = "Keybind1",
+	Callback = function()
+if getgenv().autojumpmpt == true then
+   getgenv().autojumpmpt = false
+   else
+       getgenv().autojumpmpt = true
+       
+function autojump()
+   local plr = game:GetService'Players'.LocalPlayer
+   repeat wait() until plr.Character ~= nil
+plr.Character:WaitForChild'Humanoid'.StateChanged:Connect(function(old,new)
+   if new == Enum.HumanoidStateType.Landed and autojumpmpt then
+       plr.Character:WaitForChild'Humanoid':ChangeState("Jumping")
+   end
+end)
+end
+autojump()
+game:GetService'Players'.LocalPlayer.CharacterAdded:Connect(autojump)
+end
+end
+})
+local Button = Tab:CreateButton({
+	Name = "Evade ch",
+	Callback = function()
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua'))()
+
+end,
+})
+local Tab = Window:CreateTab("Da Hood" )
+local Button = Tab:CreateButton({
+	Name = "ESP",
+	Callback = function()
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/GreenMs02/Electron/master/unnamedesp.txt'))()
+
+		-- The function that takes place when the button is pressed
+	end,
+})
+local Button = Tab:CreateButton({
+	Name = "Faded",
+	Callback = function()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+
+		-- The function that takes place when the button is pressed
+	end,	   
+})
+	local Keybind = Tab:CreateKeybind({
+	Name = "ESP",
+	CurrentKeybind = "KeypadThree",
+	HoldToInteract = false,
+	Flag = "Keybind1",
+	Callback = function()
+		    loadstring(game:HttpGet('https://raw.githubusercontent.com/GreenMs02/Electron/master/unnamedesp.txt'))()
+
+		-- The function that takes place when the button is pressed
+	end,
+})
+	local Keybind = Tab:CreateKeybind({
+	Name = "Faded",
+	CurrentKeybind = "KeypadNine",
+	HoldToInteract = false,
+	Flag = "Keybind1",
+	Callback = function()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+
+		-- The function that takes place when the button is pressed
+	end,
+})
+local Tab = Window:CreateTab("All", 4483362458)
+local Button = Tab:CreateButton({
+	Name = "ESP",
+	Callback = function()
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/GreenMs02/Electron/master/unnamedesp.txt'))()
+
+		-- The function that takes place when the button is pressed
+	end,
+})
+local Button = Tab:CreateButton({
+	Name = "Inf yeld",
+	Callback = function()
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+	
+
+		-- The function that takes place when the button is pressed
+	end,	   
+})
+local Button = Tab:CreateButton({
+	Name = "Faded",
+	Callback = function()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/NighterEpic/Faded/main/YesEpic", true))()
+
+		-- The function that takes place when the button is pressed
+	end,	   
+})
+local Button = Tab:CreateButton({
+	Name = "SmallAvatar",
+	Callback = function()
+	    loadstring(game:HttpGet("https://raw.githubusercontent.com/frostiyrvh/small-avatar/main/small%20avatar", true))()
+
+		-- The function that takes place when the button is pressed
+	end,	   
+})
+local Button = Tab:CreateButton({
+	Name = "-",
+	Callback = function()
+
+		-- The function that takes place when the button is pressed
+	end,	   
+})
+local Button = Tab:CreateButton({
+	Name = "-",
+	Callback = function()
+
+		-- The function that takes place when the button is pressed
+	end,	   
+})
+wait(3)
+--loadstring(game:HttpGet('https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua'))()
