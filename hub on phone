@@ -1,4 +1,4 @@
-local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/shlexware/Rayfield/main/source'))()
+local Rayfield = loadstring(game:HttpGet('https://raw.githubusercontent.com/frostiyrvh/small-avatar/main/Rayf%20main%20code'))()
 local Window = Rayfield:CreateWindow({
 	Name = "choko :>",
 	LoadingTitle = "ChokoHub",
