@@ -164,5 +164,13 @@ local Button = Tab:CreateButton({
 		-- The function that takes place when the button is pressed
 	end,
 })
+local Button = Tab:CreateButton({
+	Name = "Gaint Avatar",
+	Callback = function()
+	    loadstring(game:HttpGet('https://raw.githubusercontent.com/frostiyrvh/small-avatar/main/gaint%20avatar'))()
+
+		-- The function that takes place when the button is pressed
+	end,
+})
 wait(3)
 --loadstring(game:HttpGet('https://raw.githubusercontent.com/9Strew/roblox/main/gamescripts/evade.lua'))()
